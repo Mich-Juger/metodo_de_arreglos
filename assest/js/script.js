@@ -32,15 +32,15 @@ function actualizar_listado_tareas(arregloTareas) {
         `;             
         // Cambiar estado completado/No completado    
         if (tarea.completado == true) {
-           html +=  `<input type="checkbox" id="estado_tarea_${tarea.id}" name= "estado_tarea" value= "${tarea.id}" onclick="cambiarEstado(${tarea.id});" checked>`; 
+           html +=  `<input type="checkbox" id="estado_tarea_${tarea.id}" name= "estado_tarea" value= "${tarea.id}" onclick="cambiarEstado(${tarea.id});" class="color-check" checked>`; 
 
         } else {
-            html +=  `<input type="checkbox" id="estado_tarea_${tarea.id}" name= "estado_tarea" value= "${tarea.id}" onclick="cambiarEstado(${tarea.id});">`; 
+            html +=  `<input type="checkbox" id="estado_tarea_${tarea.id}" name= "estado_tarea" value= "${tarea.id}" onclick="cambiarEstado(${tarea.id});" class="color-check">`; 
         }
         // Eliminar Tarea usar splace o slice
         html +=  `</td>
                     <td>
-                        <a href= "#" onclick="eliminarTarea(${tarea.id})">Eliminar</a>
+                        <a href= "#" onclick="eliminarTarea(${tarea.id})" class="color-eliminar">Eliminar</a>
                     </td>
         `;     
     }

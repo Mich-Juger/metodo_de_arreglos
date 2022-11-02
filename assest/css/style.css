@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+#contenedor_principal {
+    background-color: rgba(12, 23, 118, 0.889);
+    width: 700px;
+}
+
+#contenedor_contador_y_tabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+#input_nueva_tarea {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 36px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    padding-left: 63px;
+    padding-bottom: 10px;
+}
+
+#agregar {
+    background-color: #af4b19;
+    border-radius: 100px;
+    box-shadow: rgba(214, 113, 30, 0.2) 0 -25px 18px -14px inset,rgba(220, 105, 24, 0.15) 0 1px 2px,rgba(224, 121, 12, 0.15) 0 2px 4px,rgba(202, 145, 38, 0.15) 0 4px 8px,rgba(198, 132, 39, 0.15) 0 8px 16px,rgba(202, 153, 29, 0.15) 0 16px 32px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 50px;
+    border: 0;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/*Select*/
+
+#tarea {
+	display: inline-block;
+	cursor: pointer;
+    width: 250px;
+  	padding: 3px 90px;
+  	height: 25px;
+	border-radius: 0;
+	background: #f0f0f0;
+	font-size: 16px;
+	color: rgb(2, 1, 19);
+	border:2px solid rgba(15, 54, 80, 0.816);
+    border-radius: 12px;
+    transition: all 0.25s ease;
+}
+
+.color-eliminar {
+    color: #af4b19;
+    text-decoration: none;
+    padding-left: 16px;
+    
+}
+
+.color-check {
+    accent-color: green;
+    margin-left: 30px;
+}

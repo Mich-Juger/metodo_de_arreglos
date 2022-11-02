@@ -5,29 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metodos de Arreglo</title>
+
+<!--CSS-->    
+    <link rel="stylesheet" href="assest/css/reset.css">
+    <link rel="stylesheet" href="assest/css/style.css">
+<!--CSS-->
+
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+<!--Google Fonts-->
+
 </head>
 <body>
-    <input type="text" id="tarea" name="tarea" placeholder="Ingresar una nueva tarea">
-    <input type="button" id="agregar" name="agregar" value="Agregar">
     
-    <div id="contador_tareas">
-        <p>Total: 0</p>
-        <p>Realizadas: 0</p>
-        <p>Pendientes: 0</p>
-    </div>
+    <section id="contenedor_principal">
+        <h1>Todo List</h1>
+        <h2>Nueva tarea</h2>
+        <article id="input_nueva_tarea">
+            <input type="text" id="tarea" name="tarea" placeholder="Ingresar una nueva tarea">
+            <input type="button" id="agregar" name="agregar" value="Agregar">
+        </article>
+        
+        <article id="contenedor_contador_y_tabla">
+            <div id="contador_tareas">
+                <p>Total: 0</p>
+                <p>Realizadas: 0</p>
+                <p>Pendientes: 0</p>
+            </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Tarea</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody id="actualizar_listado_tareas">
-        </tbody>
-    </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="min-width: 60px; text-align: left; font-weight: bold;">ID</th>
+                        <th style="text-align: left; font-weight: bold;">Tarea</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="actualizar_listado_tareas">
+                </tbody>
+            </table>
+        </article>
+    </section>
 
     <script src="assest/js/script.js"></script>
 </body>
